@@ -19,10 +19,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial bleck', sans-serif;
     background: var(--dark-bg);
     color: var(--light-text);
-    line-height: 1.9;
+    line-height: 3;
     overflow-x: hidden;
     /* Prevent horizontal scroll */
 }
