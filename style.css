@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1.rem 5%;
     background: rgba(15, 23, 42, 0.95);
     position: fixed;
     top: 0;
