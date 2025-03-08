@@ -335,3 +335,13 @@ body {
 .signal-result.pending {
     color: #aaa;
 }
+
+<div class="overlay" id="login-overlay">
+    <div class="auth-box">
+        <h2>Acesso ao Sistema</h2>
+        <input type="email" class="auth-input" id="email" placeholder="Email">
+        <input type="password" class="auth-input" id="password" placeholder="Senha">
+        <button class="cta-btn" onclick="handleLogin()">Entrar</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+</div>
