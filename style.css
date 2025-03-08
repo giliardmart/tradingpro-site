@@ -1,6 +1,6 @@
 ﻿/* Styles - Optimizing and streamlining styles */
 :root {
-    --primary-gradient: linear-gradient(135deg, #4a90e2, #7952b3);
+    --primary-gradient: linear-gradient(135deg, #4a90e8, #7952b8);
     --secondary-gradient: linear-gradient(135deg, #347eff, #9b51e0);
     --dark-bg: #0f172a;
     --light-text: #f1f5f9;
@@ -13,7 +13,7 @@
 *,
 *::before,
 *::after {
-    margin: 0;
+    margin: 1;
     padding: 0;
     box-sizing: border-box;
 }
