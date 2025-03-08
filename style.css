@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
     font-weight: 700;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
