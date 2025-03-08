@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TradingPro</div>
+        <div class="auth-buttons">
+            <button class="cta-btn" onclick="toggleLogin()">Login</button>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Negocie com Inteligência Artificial</h1>
+            <p>Gerador de sinais automático com análise preditiva para potencializar seus trades.</p>
+            <button class="cta-btn" onclick="toggleLogin()">Acessar Sinais</button>
+        </div>
+    </section>
+    <div class="overlay" id="login-overlay">
+        <div class="auth-box">
+            <h2>Acesso ao Sistema</h2>
+            <input type="email" class="auth-input" id="email" placeholder="Email">
+            <input type="password" class="auth-input" id="password" placeholder="Senha">
+            <button class="cta-btn" onclick="handleLogin()">Entrar</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+    <div class="overlay" id="admin-panel" style="display: none;">
+        <div class="auth-box">
+            <h2>Painel do Administrador</h2>
+            <input type="email" class="auth-input" id="new-user-email" placeholder="Email do Novo Usuário">
+            <input type="number" class="auth-input" id="new-user-license" placeholder="Dias de Licença" value="30">
+            <button class="cta-btn" onclick="addUser()">Cadastrar Usuário</button>
+            <div id="user-list" style="margin: 1rem 0;"></div>
+            <button class="cta-btn" onclick="closeAdmin()">Fechar Painel</button>
+        </div>
+    </div>
+    <div id="signal-page">
+        <div class="container">
+            <div class="signal-header">
+                <button class="cta-btn" onclick="logout()">Sair</button>
+                <p id="license-info"></p>
+            </div>
+            <div id="signal-container">
+                <div class="signal-item">Aguardando sinal...</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
